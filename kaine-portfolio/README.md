@@ -1,5 +1,11 @@
-# KFC BUCKET BOY website frontend
+# Kaine's Portfolio
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+# About the
+This project is the full frontend code for Kaine's Portfolio where all of his work is displayed on his website.
+
+
 
 ## Available Scripts
 

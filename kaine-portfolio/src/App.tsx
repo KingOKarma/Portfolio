@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
+import React from 'react';
+import './App.css';
+import Navigation from './components/Navbar/NavbarElements';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './pages';
+import About from './pages/about';
+import Games from './pages/my-stuff/games';
+import Programming from './pages/my-stuff/programming';
+  
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+      <div className="App-base">
+      <Navigation />
+      <Switch>
+        <Route path='/' exact component={Home} />
+        <Route path='/about' component={About} />
+        <Route path='/my-stuff/programming' component={Programming} />
+        <Route path='/my-stuff/games' component={Games} />
+      </Switch>
+      {/* <h1 style={{
+        display: 'flex',
+        justifyContent: 'center',
+        padding: "15% 0%",
+        textAlign: 'center',
+        height: '100vh',
+        color: 'white',
+      }}>You seem to be lost...</h1> */}
     </div>
+    </Router>
+
   );
 }
-
+  
 export default App;

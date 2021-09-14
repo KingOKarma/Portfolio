@@ -44,8 +44,9 @@ const About = () => {
       }}>
         Hi I'm kaine! I'm a Developer who loves to make games in Unity and Unreal engine along with
         Discord/Twitch bots in typescript, I'll have all of my work displayed on this very website.
-        I've been studying on how to make websties so I challenged myself to code my own website to
-        show off all of my own hard work, I hope you enjoy it! If you see me as a potential employee you can take a look at my linkedin down below!</p>
+        I've been studying on how to make websites so I challenged myself to code my own website to
+        show off all of my own hard work, I hope you enjoy it! If you see me as a potential employee
+        you can take a look at my linkedin down below!</p>
       <hr />
 
       <div

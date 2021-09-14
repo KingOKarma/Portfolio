@@ -2,7 +2,7 @@ import React from 'react';
 import TitleBox from '../../components/Title/TitleBox';
 import kaineLofi from "../../images/kaine_lofi.png";
 import kaineTitle from "../../images/kaineTitle.png";
-
+import kaine404 from "../../images/kaine404.png";
 // import kaineBorder from "../../images/kaineBorder.png";
 import "../css/credits.css";
 
@@ -23,15 +23,23 @@ const Credits = () => {
             <ul className="list-unstyled">
                 <div>
                     <li className="credit-text credit-link" >Banner: Commissioned to
-                        <a href="https://www.instagram.com/toadeen/"> @toadeen</a></li>
+                        <a href="https://www.instagram.com/toadeen/" target="_blank" rel='noreferrer' > @toadeen</a></li>
                     <img src={kaineLofi} alt="Kaine_Lofi.png" className="credit-img"></img>
                 </div>
 
                 <hr />
                 <div>
                     <li className="credit-text credit-link" >Avatar: Commissioned to
-                        <a href="https://twitter.com/SElFVKU/"> @cat</a></li>
+                        <a href="https://twitter.com/SElFVKU/" target="_blank" rel='noreferrer' > @cat</a></li>
                     <img src={kaineTitle} alt="KaineTitle.png" className="credit-img"></img>
+                </div>
+
+                <hr />
+
+                <div>
+                    <li className="credit-text credit-link" >404 page icon: Drawn by
+                        <a href="https://www.instagram.com/vejable/" target="_blank" rel='noreferrer' > @vejable</a></li>
+                    <img src={kaine404} alt="Kaine404.png" className="credit-img"></img>
                 </div>
 
                 <hr />

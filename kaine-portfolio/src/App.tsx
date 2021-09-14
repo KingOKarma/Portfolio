@@ -18,11 +18,11 @@ function App() {
         <Navigation />
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path='/about' component={About} />
-          <Route path='/my-stuff/programming' component={Programming} />
-          <Route path='/my-stuff/games' component={Games} />
-          <Route path='/credits/' component={Credits} />
-          <Route path='/404/' component={Error404} />
+          <Route path='/about' exact component={About} />
+          <Route path='/my-stuff/programming' exact component={Programming} />
+          <Route path='/my-stuff/games'exact component={Games} />
+          <Route path='/credits/' exact component={Credits} />
+          <Route path='/404/' exact component={Error404} />
           <Route>
           <meta http-equiv="refresh" content="0; URL='/404'" />
           </Route>

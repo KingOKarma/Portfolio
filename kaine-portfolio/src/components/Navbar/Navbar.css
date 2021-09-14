@@ -1,6 +1,6 @@
 /*NAVBAR CUSTOM CSS*/
 .nav-bar {
-    background-color: rgb(0, 46, 144);
+    background-color: #1d4899;
     border-bottom: 2px solid #dadada;
     outline: none;
     border-color: #9ecaed;
@@ -10,29 +10,47 @@
 /*NAVBAR Button*/
 
 .nav-button {
+    text-decoration: none !important;
     background-color: #7289DA;
-    width: 200px;
     border-radius: 8px;
 }
 
 .nav-button:hover {
+    text-decoration: none !important;
     background-color: #304db8;
 }
 
 /*NAVBAR TEXT*/
 
 .nav-text:hover {
-    color: #fbe14f !important;
+    text-decoration: none !important;
+    color: #fff1a2 !important;
 }
 
 .nav-text:focus {
-    color: #fbe14f !important;
+    color: #fff1a2 !important;
 }
 
 .nav-text {
-    color: #00ffff !important;
+    text-decoration: none !important;
+    text-decoration: none !important;
+    color: #ffcb04 !important;
 }
 
+.nav-text:active {
+    text-decoration: none !important;
+    color: #a76700 !important;
+}
+
+.nav-title {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-selections {
+    border: 3px green !important;
+
+}
 
 
 /* PC Broswer*/
@@ -41,8 +59,14 @@
     .nav-text {
         font-size: 25px;
     }
-    #nav-top {
-        padding: 0px 55px;
+    .nav-title {
+        font-size: 35px
+    }
+    .nav-selections {
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
@@ -53,5 +77,8 @@
 @media only screen and (max-width: 575px) {
     .nav-text {
         font-size: 20px;
+    }
+    .nav-title {
+        font-size: 25px
     }
 }

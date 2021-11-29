@@ -46,6 +46,11 @@ function FooterBar() {
                         <h4 className="footer-header">Extra </h4>
                         <ul className="list-unstyled">
                             <li className="footer-text footer-link" > <a href="./credits">Credits</a></li>
+
+                            <li className="footer-text footer-link" > <a href="https://cv.simpkins.dev"
+                                target="_blank" rel='noreferrer'
+                            >My CV</a></li>
+
                         </ul>
                     </div>
                 </div>

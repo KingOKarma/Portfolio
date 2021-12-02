@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 export default function FetchAPI(api: string) {
     const [data, setData] = useState([]);
-
+    // const [isLoaded, setIsLoaded] = useState(false);
     useEffect(() => {
 
         fetch(api)

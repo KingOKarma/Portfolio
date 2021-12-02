@@ -1,0 +1,43 @@
+.repoBox {
+    border: 5px #1d4899 solid;
+    border-radius: 20px;
+    padding: 12px;
+    text-decoration: none;
+    margin: 20px auto;
+    max-width: 50%;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 300px; /* Set a width if needed */
+    color: white;
+    display: inline-block; /* Make the buttons appear below each other */
+    border-bottom: none; /* Prevent double borders */
+}
+
+.repoBoxTimestamp {
+    color: grey;
+    font-size: small;
+} 
+
+.repoBoxTemplate {
+    color: white;
+    text-decoration: none;
+    font-size: small;
+    border: 2px #1d4899 solid;
+    border-radius: 10px;
+    display: block;
+    width: 35%;
+    margin: 0 auto;
+    background-color: #1d4899;
+}
+
+.buttonList {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}

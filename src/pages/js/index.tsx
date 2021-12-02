@@ -2,11 +2,7 @@
 import React from 'react';
 import TitleBox from '../../components/Title/TitleBox';
 import kaineTitle from "../../images/kaineTitle.png";
-import FetchBotStats from "../../utils/fetchAPI";
 const Home = () => {
-    const data = FetchBotStats("https://api.bucketbot.dev/application/stats");
-    console.log(data.servers);
-    console.log("Lol you found my secret logging place, yes I'll be adding api stuff here soon, shh")
 
 
   return (

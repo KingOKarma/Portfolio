@@ -50,7 +50,6 @@ const Programming = () => {
   })
 
   repos = repos.sort((a, b) => b.updatedAt - a.updatedAt)
-  repos.forEach((r) => console.log(r.updatedAt)  )
   console.log(repos);
 
   return (
@@ -64,8 +63,8 @@ const Programming = () => {
           5
         )
       }
-      <hr />
 
+      <hr />
 
       <span className="buttonList">
         <ul>
@@ -77,9 +76,13 @@ const Programming = () => {
                 className="repoBox">
                 {item.name}
                 <p className="repoBoxTimestamp">
-                  Last updated {moment(item.updatedAt).fromNow()}</p>
-                
-                {item.is_template ?  <p className="repoBoxTemplate">Template </p> : <p />}
+                  Last updated {moment(item.updatedAt).fromNow()}<br />{item.language}</p>
+
+                <p >⭐ {item.stargazers_count} </p>
+
+                {item.is_template ? <p className="repoBoxTemplate">Template </p> : <p />}
+
+
               </a>
             ))
 

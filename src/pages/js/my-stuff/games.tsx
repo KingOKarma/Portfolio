@@ -45,6 +45,7 @@ const Games = () => {
         r.publishedAt = date
         return r;
     })
+    repos = repos.filter((r) => r.published);
 
     repos = repos.sort((a, b) => b.publishedAt - a.publishedAt)
     console.log(repos);

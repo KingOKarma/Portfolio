@@ -22,11 +22,11 @@ function Navigation() {
                                 className="nav-dropdown"
                                 title={
                                     <span className="nav-text">My Stuff</span>
-                                }
-                                id="nav-dropdown-dark-example">
-                                <NavDropdown.Item className="nav-dropdown" href="/my-stuff/programming">Programming</NavDropdown.Item>
+                                }>
+                                    <NavDropdown.Header> Projects </NavDropdown.Header>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item  className="nav-dropdown"href="/my-stuff/games">Games</NavDropdown.Item>
+                                <NavDropdown.Item className="nav-dropdown" href="/my-stuff/programming">🖥️ Programming</NavDropdown.Item>
+                                <NavDropdown.Item  className="nav-dropdown"href="/my-stuff/games">🎮 Games</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                     </Container>

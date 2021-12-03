@@ -73,7 +73,7 @@ const Games = () => {
                                 className="repoBox">
                                 {item.title}
                                 <p className="repoBoxTimestamp">
-                                    Last updated {moment(item.publishedAt).fromNow()}<br />{item.min_price > 0 ? `$${item.min_price}` : "Choose your price"}</p>
+                                    Last updated {moment(item.publishedAt).fromNow()}<br />{item.min_price > 0 ? `$${item.min_price}+` : "Choose your price"}</p>
 
                                 <p >👀 {item.views_count} ⬇️ {item.downloads_count}  </p>
 

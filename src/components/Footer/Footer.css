@@ -44,7 +44,13 @@
     border-top: 2px solid #dadada;
     outline: none;
     border-color: #9ecaed;
-    box-shadow: 0 0 10px #9ecaed;
+    border-bottom: none !important;
+}
+
+.row-sort {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
 }
 
 

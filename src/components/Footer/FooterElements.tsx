@@ -10,7 +10,7 @@ function FooterBar() {
             <div className="container">
                 <h4 className="footer-top" >Socials</h4>
 
-                <div className="row">
+                <div className="row row-sort">
                     {/* Column1 */}
                     <div className="col">
                         <h4 className="footer-header" >Socials</h4>

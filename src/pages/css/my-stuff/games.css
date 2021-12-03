@@ -1,4 +1,5 @@
 .repoBox {
+    transition: all .3s ease-in-out;
     border: 5px #1d4899 solid;
     border-radius: 20px;
     padding: 12px;
@@ -15,22 +16,19 @@
     border-bottom: none; /* Prevent double borders */
 }
 
+.repoBox:hover {
+    transform: scale(1.1);
+    border: 5px #0456ee solid;
+    border-bottom: none; /* Prevent double borders */
+    color: white;
+
+}
+
 .repoBoxTimestamp {
     color: grey;
     font-size: small;
 } 
 
-.repoBoxTemplate {
-    color: white;
-    text-decoration: none;
-    font-size: small;
-    border: 2px #1d4899 solid;
-    border-radius: 10px;
-    display: block;
-    width: 35%;
-    margin: 0 auto;
-    background-color: #1d4899;
-}
 
 .buttonList {
     width: 100%;

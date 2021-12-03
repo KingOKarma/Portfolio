@@ -30,23 +30,15 @@ const About = () => {
           5)
       }
 
-      <h1 style={{
-        display: 'flex',
-        justifyContent: 'center',
-        color: 'white',
-      }}>All About Kaine! Soon to come...</h1>
+
       <hr />
-      <p style={{
-        display: 'flex',
-        justifyContent: 'center',
-        textAlign: 'center',
-        color: 'white',
-      }}>
+      <p className="aboutBox">
         Hi I'm kaine! I'm a Developer who loves to make games in Unity and Unreal engine along with
-        Discord/Twitch bots in typescript, I'll have all of my work displayed on this very website.
+        Discord/Twitch bots in Typescript, I have all of my work displayed on this very website.
+        <br />
         I've been studying on how to make websites so I challenged myself to code my own website to
         show off all of my own hard work, I hope you enjoy it! If you see me as a potential employee
-        you can take a look at my linkedin down below!</p>
+        you can take a look at my linkedin and other socials down below!</p>
       <hr />
 
       <div

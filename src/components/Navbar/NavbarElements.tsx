@@ -11,7 +11,7 @@ function Navigation() {
         <Navbar className="nav-bar" expand="lg" sticky="top">
             <Container>
                 <Navbar.Brand href="." className="d-inline-block align-top"><img src={logo} className="App-logo" alt="logo" /></Navbar.Brand>
-                <h1 className="nav-title col" >Kaine Simpkins</h1>
+                <h1 className="nav-title col" ><a href=".">Kaine Simpkins</a></h1>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Container className="nav-selections" >

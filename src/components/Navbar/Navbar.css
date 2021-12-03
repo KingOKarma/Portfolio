@@ -42,8 +42,9 @@
     color: #a76700 !important;
 }
 
-.nav-title {
-    color: white;
+.nav-title a{
+    color: white !important;
+    text-decoration: none !important;
     font-weight: bold;
 }
 

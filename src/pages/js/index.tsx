@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       {
         TitleBox(
-          "Kaine Simpkins",
+          "Portfolio",
           "Typescript/Unity & Unreal Engine Games Developer, Follower of all that is \"Nerd\"",
           kaineTitle,
           6
@@ -29,7 +29,7 @@ const Home = () => {
           justifyContent: 'center',
           textAlign: 'center',
           color: 'white',
-        }}>Take a look around via the navigation bar as this website is still under development</p>
+        }}>Take a look around via the navigation bar!</p>
       </span>
     </div>
   );

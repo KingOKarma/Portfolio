@@ -5,6 +5,7 @@ import { GithubAPI } from './types';
 import axios, { AxiosResponse } from "axios";
 import "../../css/my-stuff/programming.css"
 import moment from 'moment';
+import { Loading } from '../../../utils/Loading';
 // import moment from 'moment';
 
 
@@ -14,6 +15,9 @@ const Programming = () => {
   const [githubData, setGithubData] = useState<GithubAPI>({ github: [] });
   const [errorMsg, setErrorMsg] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [loadedText, setLoadedText] = useState("Loading");
+
+  Loading(loadedText, setLoadedText, isLoading);
 
   useEffect(() => {
     async function getGitData() {
@@ -30,7 +34,7 @@ const Programming = () => {
               setIsLoading(false);
               setGithubData(response.data);
 
-            }, 5000);
+            }, 3000);
           })
 
       } catch (err: any) {
@@ -94,10 +98,11 @@ const Programming = () => {
           }
           {isLoading ?
             <div className="preloader">
-              <div className="text">Loading...</div>
+              <div className="text">{loadedText}</div>
               <span className="circle circle-white"></span>
+              <br /> <br /> <br /> <br /> <br />
             </div>
-            : <br />}
+            : <div />}
         </ul>
 
       </span>

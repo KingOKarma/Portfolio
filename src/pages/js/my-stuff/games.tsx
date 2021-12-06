@@ -5,15 +5,21 @@ import itchLogo from "../../../images/itchLogo.png";
 import { ItchaPI } from './types';
 import "../../css/my-stuff/games.css"
 import moment from 'moment';
+import { Loading } from '../../../utils/Loading';
 
 const Games = () => {
 
     const [itchData, setItchData] = useState<ItchaPI>({ itch: [] });
     const [errorMsg, setErrorMsg] = useState<any>(null);
+    const [isLoading, setIsLoading] = useState(false);
+    const [loadedText, setLoadedText] = useState("Loading");
+
+    Loading(loadedText, setLoadedText, isLoading);
 
     useEffect(() => {
         async function getGitData() {
             try {
+                setIsLoading(true);
                 await axios.get<ItchaPI>("https://api.simpkins.dev/itch")
                     .then((response: AxiosResponse) => {
                         if (response.status !== 200) {
@@ -22,7 +28,11 @@ const Games = () => {
 
                         }
 
-                        setItchData(response.data);
+                        setTimeout(() => {
+                            setIsLoading(false);
+                            setItchData(response.data);
+
+                        }, 3000);
                     })
 
             } catch (err: any) {
@@ -52,7 +62,7 @@ const Games = () => {
 
     return (
         <div className="fadein">
-        {
+            {
                 TitleBox(
                     "My Games",
                     "Heres a wonderful list of all of the games that I have maked/helped with!",
@@ -84,6 +94,13 @@ const Games = () => {
                         ))
 
                     }
+                    {isLoading ?
+                        <div className="preloader">
+                            <div className="text">{loadedText}</div>
+                            <span className="circle circle-white"></span>
+                            <br /> <br /> <br /> <br /> <br />
+                        </div>
+                        : <div />}
                 </ul>
 
             </span>

@@ -22,6 +22,9 @@
     color: #f6f6f6;
     width: 100%;
     text-align: center;
+    left: 100%;
+    right: 100%;
+    margin: 0 auto;
     top: calc(50% - 5em);
     font-size: 2em;
     font-weight: bold;

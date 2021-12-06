@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import TitleBox from '../../components/Title/TitleBox';
 import kaineLofi from "../../images/kaine_lofi.png";
 import "../css/about.css";
+import "../css/global.css";
 
 const About = () => {
 
@@ -20,7 +21,7 @@ const About = () => {
   }, []);
 
   return (
-    <div>
+    <div className="fadein">
 
       {
         TitleBox(

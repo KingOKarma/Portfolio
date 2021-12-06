@@ -43,7 +43,7 @@ const Programming = () => {
 
   repos = repos.map((r) => {
     // const date = moment(r.updated_at).valueOf()
-    const date = Date.parse(r.updated_at);
+    const date = Date.parse(r.pushed_at);
 
     r.updatedAt = date
     return r;
@@ -53,7 +53,7 @@ const Programming = () => {
   console.log(repos);
 
   return (
-    <div>
+    <div className="fadein">
 
       {
         TitleBox(

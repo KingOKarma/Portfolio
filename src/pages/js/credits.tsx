@@ -5,6 +5,7 @@ import kaineTitle from "../../images/kaineTitle.png";
 import kaine404 from "../../images/kaine404.png";
 // import kaineBorder from "../../images/kaineBorder.png";
 import "../css/credits.css";
+import "../css/global.css";
 
 const Credits = () => {
 
@@ -13,8 +14,8 @@ const Credits = () => {
       }, [])
     
     return (
-        <div>
-            {
+        <div className="fadein">
+        {
                 TitleBox(
                     "Credits",
                     "This page will credit all people who have created any art related assets to help build the website!",

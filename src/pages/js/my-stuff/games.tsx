@@ -51,8 +51,8 @@ const Games = () => {
     console.log(repos);
 
     return (
-        <div>
-            {
+        <div className="fadein">
+        {
                 TitleBox(
                     "My Games",
                     "Heres a wonderful list of all of the games that I have maked/helped with!",

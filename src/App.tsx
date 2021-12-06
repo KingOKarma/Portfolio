@@ -10,6 +10,7 @@ import Credits from './pages/js/credits';
 import Games from './pages/js/my-stuff/games';
 import Programming from './pages/js/my-stuff/programming';
 import Error404 from './pages/js/404';
+import "./pages/css/global.css";
 
 function App() {
   return (
@@ -27,7 +28,6 @@ function App() {
           <meta http-equiv="refresh" content="0; URL='/404'" />
           </Route>
 
-            
         </Switch>
         <FooterBar />
       </div>

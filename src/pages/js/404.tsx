@@ -1,11 +1,12 @@
 import React from 'react';
 import TitleBox from '../../components/Title/TitleBox';
 import kaine404 from "../../images/kaine404.png";
+import "../css/global.css"
 
 const Error404 = () => {
 
     return (
-        <div>
+        <div className="fadein">
 
             {
                 TitleBox(

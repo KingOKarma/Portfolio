@@ -2,11 +2,12 @@
 import React from 'react';
 import TitleBox from '../../components/Title/TitleBox';
 import kaineTitle from "../../images/kaineTitle.png";
+import '../css/global.css';
 const Home = () => {
 
 
   return (
-    <div>
+    <div className="fadein">
       {
         TitleBox(
           "Portfolio",

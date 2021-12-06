@@ -1,0 +1,12 @@
+.fadein {
+    animation: fadeIn 3s ease-out;
+  }
+
+
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    0% {transform: translateY(-35%);}
+    25% {transform: translateY(0%);}
+  }
+

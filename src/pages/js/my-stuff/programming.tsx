@@ -13,10 +13,12 @@ const Programming = () => {
 
   const [githubData, setGithubData] = useState<GithubAPI>({ github: [] });
   const [errorMsg, setErrorMsg] = useState<any>(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     async function getGitData() {
       try {
+        setIsLoading(true);
         await axios.get<GithubAPI>("https://api.simpkins.dev/github")
           .then((response: AxiosResponse) => {
             if (response.status !== 200) {
@@ -24,8 +26,11 @@ const Programming = () => {
               return Promise.reject(error);
 
             }
+            setTimeout(() => {
+              setIsLoading(false);
+              setGithubData(response.data);
 
-            setGithubData(response.data);
+            }, 5000);
           })
 
       } catch (err: any) {
@@ -87,6 +92,12 @@ const Programming = () => {
             ))
 
           }
+          {isLoading ?
+            <div className="preloader">
+              <div className="text">Loading...</div>
+              <span className="circle circle-white"></span>
+            </div>
+            : <br />}
         </ul>
 
       </span>

@@ -4,6 +4,7 @@ import '../../App.css';
 import "./Navbar.css";
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import logo from "../../images/kaineBorder.png";
+import { Link } from 'react-router-dom';
 
 function Navigation() {
     return (
@@ -16,8 +17,8 @@ function Navigation() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Container className="nav-selections" >
                         <Nav className="m-auto" id="nav-top">
-                            <Nav.Link href="/" className="nav-text">Home</Nav.Link>
-                            <Nav.Link href="/about" className="nav-text">About Me</Nav.Link>
+                            <Nav.Link as={Link} to="/" className="nav-text">Home</Nav.Link>
+                            <Nav.Link as={Link} to="/about" className="nav-text">About Me</Nav.Link>
                             <NavDropdown
                                 className="nav-dropdown"
                                 title={
@@ -25,8 +26,8 @@ function Navigation() {
                                 }>
                                     <NavDropdown.Header> Projects </NavDropdown.Header>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item className="nav-dropdown" href="/my-stuff/programming">🖥️ Programming</NavDropdown.Item>
-                                <NavDropdown.Item  className="nav-dropdown"href="/my-stuff/games">🎮 Games</NavDropdown.Item>
+                                <NavDropdown.Item className="nav-dropdown" as={Link} to="/my-stuff/programming">🖥️ Programming</NavDropdown.Item>
+                                <NavDropdown.Item  className="nav-dropdown"as={Link} to="/my-stuff/games">🎮 Games</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                     </Container>

@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../../App.css';
 import "./Footer.css";
 
@@ -12,9 +13,9 @@ function FooterBar() {
 
                 <div className="row row-sort">
                     {/* Column1 */}
-                    <div className="col">
-                        <h4 className="footer-header" >Socials</h4>
+                    <div className="col full-footer">
                         <ul className="list-unstyled">
+                        <h4 className="footer-header" >Socials</h4>
                             <li className="footer-text footer-link" ><a href="https://github.com/KingOKarma"
                                 target="_blank" rel='noreferrer'
                             >Github</a></li>
@@ -35,17 +36,17 @@ function FooterBar() {
                         </ul>
                     </div>
                     {/* Column2 */}
-                    <div className="col">
-                        <h4 className="footer-header">Contact</h4>
+                    <div className="col full-footer">
                         <ul className="list-unstyled">
+                        <h4 className="footer-header">Contact</h4>
                             <li className="footer-text footer-link"><a href="mailto:kainesimpkins782@gmail.com">kainesimpkins782@gmail.com</a></li>
                         </ul>
                     </div>
                     {/* Column3 */}
-                    <div className="col">
-                        <h4 className="footer-header">Extra </h4>
+                    <div className="col full-footer">
                         <ul className="list-unstyled">
-                            <li className="footer-text footer-link" > <a href="./credits">Credits</a></li>
+                        <h4 className="footer-header">Extra </h4>
+                            <li className="footer-text footer-link" > <NavLink to="./credits">Credits</NavLink></li>
 
                             <li className="footer-text footer-link" > <a href="https://cv.simpkins.dev"
                                 target="_blank" rel='noreferrer'

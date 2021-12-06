@@ -1,3 +1,9 @@
+.full-footer {
+    display: flex;
+    justify-content: center;
+}
+
+
 .footer-text {
     font-size: 15px !important;
     color: #ffcb04 !important;
@@ -49,7 +55,7 @@
 
 .row-sort {
     margin: 0 auto;
-    width: 80%;
+    width: 75%;
     text-align: center;
 }
 

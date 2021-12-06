@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import TitleBox from '../../components/Title/TitleBox';
 import kaineLofi from "../../images/kaine_lofi.png";
 import kaineTitle from "../../images/kaineTitle.png";
@@ -8,6 +8,10 @@ import "../css/credits.css";
 
 const Credits = () => {
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+    
     return (
         <div>
             {

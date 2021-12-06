@@ -30,19 +30,29 @@
 } 
 
 .repoBoxTemplate {
+    padding: 2px 20px; /* Some padding */
+    display: inline-block; /* Make the buttons appear below each other */
     color: white;
     text-decoration: none;
     font-size: small;
     border: 2px #1d4899 solid;
     border-radius: 10px;
-    display: block;
-    width: 35%;
-    margin: 0 auto;
+    width: 100%;
     background-color: #1d4899;
 }
 
 .buttonList {
     width: 100%;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.tagsList {
+    width: 95%;
     position: relative;
     display: flex;
     margin: 0 auto;

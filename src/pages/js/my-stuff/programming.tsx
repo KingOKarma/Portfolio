@@ -88,10 +88,14 @@ const Programming = () => {
                   Last updated {moment(item.updatedAt).fromNow()}<br />{item.language}</p>
 
                 <p >⭐ {item.stargazers_count} </p>
-
-                {item.is_template ? <p className="repoBoxTemplate">Template </p> : <p />}
-
-
+                <span className="tagsList">
+                  <ul>
+                    {item.is_template ? <p className="repoBoxTemplate">Template </p> : <br />}
+                    {item.topics.length !== 0 ? item.topics.map((m) => {
+                      return <p key={m} className="repoBoxTemplate">{m}</p> 
+                    }) : <br />}
+                    </ul>
+                </span>
               </a>
             ))
 

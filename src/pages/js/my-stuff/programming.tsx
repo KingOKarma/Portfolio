@@ -82,7 +82,7 @@ const Programming = () => {
             repos.map(item => (
               <a key={item.id}
                 href={item.html_url} target="_blank" rel='noreferrer'
-                className="repoBox">
+                className={`repoBox ${isLoading ? "" : "fadein"}`}>
                 {item.name}
                 <p className="repoBoxTimestamp">
                   Last updated {moment(item.updatedAt).fromNow()}<br />{item.language}</p>

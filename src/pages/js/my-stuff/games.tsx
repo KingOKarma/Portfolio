@@ -80,7 +80,7 @@ const Games = () => {
                         repos.map(item => (
                             <a key={item.id}
                                 href={item.url} target="_blank" rel='noreferrer'
-                                className="repoBox">
+                                className={`repoBox ${isLoading ? "" : "fadein"}`}>
                                 {item.title}
                                 <p className="repoBoxTimestamp">
                                     Last updated {moment(item.publishedAt).fromNow()}<br />{item.min_price > 0 ? `$${item.min_price}+` : "Choose your price"}</p>

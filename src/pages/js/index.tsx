@@ -32,6 +32,7 @@ const Home = () => {
           color: 'white',
         }}>Take a look around via the navigation bar!</p>
       </span>
+
     </div>
   );
 };

@@ -57,3 +57,8 @@
     }
     100% { transform: rotateZ(720deg); }
   }
+
+  .testSpin {
+    animation: rotate-circle 4s linear infinite;
+    text-align: center;
+  }

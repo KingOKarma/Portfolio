@@ -46,7 +46,7 @@ function FooterBar() {
                     <div className="col full-footer">
                         <ul className="list-unstyled">
                         <h4 className="footer-header">Extra </h4>
-                            <li className="footer-text footer-link" > <NavLink to="./credits">Credits</NavLink></li>
+                            <li className="footer-text footer-link" > <NavLink to="/credits">Credits</NavLink></li>
 
                             <li className="footer-text footer-link" > <a href="https://cv.simpkins.dev"
                                 target="_blank" rel='noreferrer'

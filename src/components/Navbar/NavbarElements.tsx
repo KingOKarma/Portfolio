@@ -20,14 +20,13 @@ function Navigation() {
                             <Nav.Link as={Link} to="/" className="nav-text">Home</Nav.Link>
                             <Nav.Link as={Link} to="/about" className="nav-text">About Me</Nav.Link>
                             <NavDropdown
-                                className="nav-dropdown"
                                 title={
                                     <span className="nav-text">My Stuff</span>
                                 }>
                                     <NavDropdown.Header> Projects </NavDropdown.Header>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item className="nav-dropdown" as={Link} to="/my-stuff/programming">🖥️ Programming</NavDropdown.Item>
-                                <NavDropdown.Item  className="nav-dropdown"as={Link} to="/my-stuff/games">🎮 Games</NavDropdown.Item>
+                                <Nav.Link className="nav-dropdown" as={Link} to="/my-stuff/programming">🖥️ Programming</Nav.Link>
+                                <Nav.Link  className="nav-dropdown" as={Link} to="/my-stuff/games">🎮 Games</Nav.Link>
                             </NavDropdown>
                         </Nav>
                     </Container>

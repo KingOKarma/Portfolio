@@ -43,7 +43,7 @@ const About = () => {
       <hr />
 
       <div
-        className="badge-base LI-profile-badge linkedin-box"
+        className="badge-base LI-profile-badge linkedin-box fadein"
         data-locale="en_US"
         data-size="large"
         data-theme="dark"

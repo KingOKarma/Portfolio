@@ -73,21 +73,21 @@ const Games = () => {
 
             <hr />
 
-            <span className="buttonList">
+            <span className="gamesbuttonList">
                 <ul>
                     {errorMsg ? <li>Error: {errorMsg}</li> :
 
                         repos.map(item => (
                             <a key={item.id}
                                 href={item.url} target="_blank" rel='noreferrer'
-                                className={`repoBox ${isLoading ? "" : "fadein"}`}>
+                                className={`gamesrepoBox ${isLoading ? "" : "fadein"}`}>
                                 {item.title}
-                                <p className="repoBoxTimestamp">
+                                <p className="gamesrepoBoxTimestamp">
                                     Last updated {moment(item.publishedAt).fromNow()}<br />{item.min_price > 0 ? `$${item.min_price}+` : "Choose your price"}</p>
 
                                 <p >👀 {item.views_count} ⬇️ {item.downloads_count}  </p>
 
-                                <img src={item.cover_url} alt={item.title} className="repoimg"></img>
+                                <img src={item.cover_url} alt={item.title} className="gamesrepoimg"></img>
 
 
                             </a>

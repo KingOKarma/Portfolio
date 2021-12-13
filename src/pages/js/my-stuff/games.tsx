@@ -2,7 +2,7 @@ import axios, { AxiosResponse } from 'axios';
 import React, { useEffect, useState } from 'react';
 import TitleBox from '../../../components/Title/TitleBox';
 import itchLogo from "../../../images/itchLogo.png";
-import { ItchaPI } from './types';
+import { ItchaPI, ItchRepoData } from './types';
 import "../../css/my-stuff/games.css"
 import moment from 'moment';
 import { Loading } from '../../../utils/Loading';
@@ -13,6 +13,7 @@ const Games = () => {
     const [errorMsg, setErrorMsg] = useState<any>(null);
     const [isLoading, setIsLoading] = useState(false);
     const [loadedText, setLoadedText] = useState("Loading");
+    const [repoData, setRepoData] = useState<ItchRepoData>()
 
     Loading(loadedText, setLoadedText, isLoading);
 
@@ -60,6 +61,16 @@ const Games = () => {
     repos = repos.sort((a, b) => b.publishedAt - a.publishedAt)
     console.log(repos);
 
+    function clickRepo(itemData?: ItchRepoData) {
+        window.scrollTo({ "behavior": "smooth", "top": 0 })
+        if (itemData) {
+            setRepoData(itemData);
+        } else {
+            setRepoData(undefined);
+        }
+    }
+
+
     return (
         <div className="fadein">
             {
@@ -73,38 +84,59 @@ const Games = () => {
 
             <hr />
 
-            <span className="gamesbuttonList">
-                <ul>
-                    {errorMsg ? <li>Error: {errorMsg}</li> :
+            {typeof repoData === "undefined" ?
 
-                        repos.map(item => (
-                            <a key={item.id}
-                                href={item.url} target="_blank" rel='noreferrer'
+
+                <span className="gamesbuttonList">
+                    <ul>
+                        {errorMsg ? <li>Error: {errorMsg}</li> :
+
+                            repos.map(item => (
+                                <p key={item.id}
+                                onClick={() => clickRepo(item)}
                                 className={`gamesrepoBox ${isLoading ? "" : "fadein"}`}>
-                                {item.title}
-                                <p className="gamesrepoBoxTimestamp">
-                                    Last updated {moment(item.publishedAt).fromNow()}<br />{item.min_price > 0 ? `$${item.min_price}+` : "Choose your price"}</p>
+                                    {item.title}
+                                    <p className="gamesrepoBoxTimestamp">
+                                        Last updated {moment(item.publishedAt).fromNow()}<br />{item.min_price > 0 ? `$${item.min_price}+` : "Choose your price"}</p>
 
-                                <p >👀 {item.views_count} ⬇️ {item.downloads_count}  </p>
+                                    <p >👀 {item.views_count} ⬇️ {item.downloads_count}  </p>
 
-                                <img src={item.cover_url} alt={item.title} className="gamesrepoimg"></img>
+                                    <img src={item.cover_url} alt={item.title} className="gamesrepoimg"></img>
 
 
-                            </a>
-                        ))
+                                </p>
+                            ))
 
-                    }
-                    {isLoading ?
-                        <div className="preloader">
-                            <div className="text">{loadedText}</div>
-                            <span className="circle circle-white"></span>
-                            <br /> <br /> <br /> <br /> <br />
-                        </div>
-                        : <div />}
-                </ul>
+                        }
+                        {isLoading ?
+                            <div className="preloader">
+                                <div className="text">{loadedText}</div>
+                                <span className="circle circle-white"></span>
+                                <br /> <br /> <br /> <br /> <br />
+                            </div>
+                            : <div />}
+                    </ul>
 
-            </span>
+                </span>
 
+
+                :
+                <span className="gamesbuttonList">
+                    <p className='arrow right' onClick={() => clickRepo(undefined)}
+                    ></p>
+                    <a key={repoData.id}
+                        href={repoData.url} target="_blank" rel='noreferrer'
+                        className={`gamesrepoBox ${isLoading ? "" : "fadein"}`}>
+                        {repoData.title}
+                        <p className="gamesrepoBoxTimestamp">
+                            Last updated {moment(repoData.publishedAt).fromNow()}<br />{repoData.min_price > 0 ? `$${repoData.min_price}+` : "Choose your price"}</p>
+
+                        <p >👀 {repoData.views_count} ⬇️ {repoData.downloads_count}  </p>
+
+                        <img src={repoData.cover_url} alt={repoData.title} className="gamesrepoimg"></img>
+                    </a>
+                </span>
+            }
 
         </div>
 

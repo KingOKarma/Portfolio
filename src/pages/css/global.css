@@ -62,3 +62,17 @@
     animation: rotate-circle 4s linear infinite;
     text-align: center;
   }
+
+  .arrow {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 3px;
+    cursor: pointer;
+  }
+  
+  .right {
+    cursor: pointer;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }

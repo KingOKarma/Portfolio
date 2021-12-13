@@ -76,3 +76,9 @@
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
   }
+
+ .centertext {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}

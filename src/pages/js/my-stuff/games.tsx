@@ -93,8 +93,8 @@ const Games = () => {
 
                             repos.map(item => (
                                 <p key={item.id}
-                                onClick={() => clickRepo(item)}
-                                className={`gamesrepoBox ${isLoading ? "" : "fadein"}`}>
+                                    onClick={() => clickRepo(item)}
+                                    className={`gamesrepoBox ${isLoading ? "" : "fadein"}`}>
                                     {item.title}
                                     <p className="gamesrepoBoxTimestamp">
                                         Last updated {moment(item.publishedAt).fromNow()}<br />{item.min_price > 0 ? `$${item.min_price}+` : "Choose your price"}</p>
@@ -121,21 +121,24 @@ const Games = () => {
 
 
                 :
-                <span className="gamesbuttonList">
-                    <p className='arrow right' onClick={() => clickRepo(undefined)}
-                    ></p>
-                    <a key={repoData.id}
-                        href={repoData.url} target="_blank" rel='noreferrer'
-                        className={`gamesrepoBox ${isLoading ? "" : "fadein"}`}>
-                        {repoData.title}
-                        <p className="gamesrepoBoxTimestamp">
-                            Last updated {moment(repoData.publishedAt).fromNow()}<br />{repoData.min_price > 0 ? `$${repoData.min_price}+` : "Choose your price"}</p>
+                <div>
+                    <p className="centertext">{repoData.short_text}</p>
+                    <span className="gamesbuttonList">
+                        <p className='arrow right' onClick={() => clickRepo(undefined)}
+                        ></p>
+                        <a key={repoData.id}
+                            href={repoData.url} target="_blank" rel='noreferrer'
+                            className={`gamesrepoBox ${isLoading ? "" : "fadein"}`}>
+                            {repoData.title}
+                            <p className="gamesrepoBoxTimestamp">
+                                Last updated {moment(repoData.publishedAt).fromNow()}<br />{repoData.min_price > 0 ? `$${repoData.min_price}+` : "Choose your price"}</p>
 
-                        <p >👀 {repoData.views_count} ⬇️ {repoData.downloads_count}  </p>
+                            <p >👀 {repoData.views_count} ⬇️ {repoData.downloads_count}  </p>
 
-                        <img src={repoData.cover_url} alt={repoData.title} className="gamesrepoimg"></img>
-                    </a>
-                </span>
+                            <img src={repoData.cover_url} alt={repoData.title} className="gamesrepoimg"></img>
+                        </a>
+                    </span>
+                </div>
             }
 
         </div>

@@ -63,7 +63,7 @@ const Programming = () => {
   console.log(repos);
 
   function clickRepo(itemData?: GithubRepoData) {
-    window.scrollTo({ "behavior": "smooth", "top": 0})
+    window.scrollTo({ "behavior": "smooth", "top": 0 })
     if (itemData) {
       setRepoData(itemData);
     } else {
@@ -121,27 +121,30 @@ const Programming = () => {
         </span>
 
         :
-        <span className="buttonList">
-          <p className='arrow right' onClick={() => clickRepo(undefined)}
-          ></p>
-          <a key={repoData.id}
-            href={repoData.html_url} target="_blank" rel='noreferrer'
-            className={`repoBox ${isLoading ? "" : "fadein"}`}>
-            {repoData.name}
-            <p className="repoBoxTimestamp">
-              Last updated {moment(repoData.updatedAt).fromNow()}<br />{repoData.language}</p>
+        <div>
+          <p className="centertext">{repoData.description}</p>
+          <span className="buttonList">
+            <p className='arrow right' onClick={() => clickRepo(undefined)}
+            ></p>
+            <a key={repoData.id}
+              href={repoData.html_url} target="_blank" rel='noreferrer'
+              className={`repoBox ${isLoading ? "" : "fadein"}`}>
+              {repoData.name}
+              <p className="repoBoxTimestamp">
+                Last updated {moment(repoData.updatedAt).fromNow()}<br />{repoData.language}</p>
 
-            <p >⭐ {repoData.stargazers_count} </p>
-            <span className="tagsList">
-              <span>
-                {repoData.is_template ? <p className="repoBoxTemplate">Template </p> : <br />}
-                {repoData.topics.length !== 0 ? repoData.topics.map((m) => {
-                  return <p key={m} className="repoBoxTemplate">{m}</p>
-                }) : <br />}
+              <p >⭐ {repoData.stargazers_count} </p>
+              <span className="tagsList">
+                <span>
+                  {repoData.is_template ? <p className="repoBoxTemplate">Template </p> : <br />}
+                  {repoData.topics.length !== 0 ? repoData.topics.map((m) => {
+                    return <p key={m} className="repoBoxTemplate">{m}</p>
+                  }) : <br />}
+                </span>
               </span>
-            </span>
-          </a>
-        </span>
+            </a>
+          </span>
+        </div>
       }
     </div>
 

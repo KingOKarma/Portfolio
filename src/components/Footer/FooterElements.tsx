@@ -39,7 +39,7 @@ function FooterBar() {
                     <div className="col full-footer">
                         <ul className="list-unstyled">
                         <h4 className="footer-header">Contact</h4>
-                            <li className="footer-text footer-link"><a href="mailto:kainesimpkins782@gmail.com">kainesimpkins782@gmail.com</a></li>
+                            <li className="footer-text footer-link"><a href="mailto:kaine@simpkins.dev">kaine@simpkins.dev</a></li>
                         </ul>
                     </div>
                     {/* Column3 */}

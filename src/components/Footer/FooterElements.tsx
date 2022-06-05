@@ -24,7 +24,7 @@ function FooterBar() {
                                 target="_blank" rel='noreferrer' >
                                 Twitter</a></li>
 
-                            <li className="footer-text footer-link" ><a href="https://discord.com/invite/nQRC3SR"
+                            <li className="footer-text footer-link" ><a href="https://discord.simpkins.dev"
                                 target="_blank" rel='noreferrer' >
                                 Discord</a></li>
 

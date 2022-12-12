@@ -1,10 +1,10 @@
 /*NAVBAR CUSTOM CSS*/
 .nav-bar {
-    background-color: #1d4899;
+    background-color: #350072;
     border-bottom: 2px solid #dadada;
     outline: none;
-    border-color: #9ecaed;
-    box-shadow: 0 0 10px #9ecaed;
+    border-color: #ffcb04;
+    box-shadow: 0 0 10px #8a9900;
 }
 
 /*NAVBAR Button*/

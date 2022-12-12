@@ -78,6 +78,7 @@ const Games = () => {
                     "My Games",
                     "Heres a wonderful list of all of the games that I have maked/helped with!",
                     itchLogo,
+                    "33.3% 100%",
                     5
                 )
             }

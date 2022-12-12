@@ -79,6 +79,7 @@ const Programming = () => {
           "Code",
           "A list of all my public repositories from Github, (from lasted updated order)",
           githubLogo,
+          "33.3% 100%",
           5
         )
       }

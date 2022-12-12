@@ -20,6 +20,7 @@ const Credits = () => {
                     "Credits",
                     "This page will credit all people who have created any art related assets to help build the website!",
                     kaineLofi,
+                    "100% 110%",
                     5)
             }
 

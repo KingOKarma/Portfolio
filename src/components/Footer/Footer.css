@@ -43,13 +43,14 @@
 
 .main-footer {
     color: #ffcb04 !important;
-    background-color: #1d4899;
+    background-color: #350072;
     padding-top: 10px;
     position: relative;
     width: 100%;
     border-top: 2px solid #dadada;
     outline: none;
-    border-color: #9ecaed;
+    border-color: #ffcb04;
+    box-shadow: 1px 0 0 0 #8a9900;
     border-bottom: none !important;
 }
 

@@ -2,6 +2,11 @@
     animation: fadeIn 3s ease-out;
   }
 
+.link {
+  text-decoration: none !important;
+  color: #ffcb04 !important;
+  cursor: help
+}
 
   @keyframes fadeIn {
     0% {opacity: 0;}

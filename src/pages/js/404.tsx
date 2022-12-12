@@ -11,8 +11,9 @@ const Error404 = () => {
             {
                 TitleBox(
                     "404 Not Found",
-                    "You seem to have gotten lost!"
-                    , kaine404,
+                    "You seem to have gotten lost!",
+                    kaine404,
+                    "33.3% 100%",
                     2)
             }
 

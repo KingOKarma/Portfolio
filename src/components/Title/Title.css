@@ -9,21 +9,13 @@
 .title-desc {
     position: relative;
     text-align: center;
+    justify-content: center;
     color: white;
     font-size: 15px;
 }
 
 .title-box {
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 100px 25px;
-    border: 2px solid #000000;
-    border-radius: 20px;
-    outline: none;
-    border-color: #c8c8c86e;
-    box-shadow: 0 0 10px #f8f8f85b;
+    border: 2px solid #000000c9;
 }
 
 
@@ -32,9 +24,6 @@
 @media only screen and (min-width:576px) {
     .title-text {
         font-size: 65px;
-    }
-    .title-box {
-        width: 600px;
     }
 
 }
@@ -46,8 +35,6 @@
     .title-text {
         font-size: 35px;
     }
-    .title-box {
-        width: 300px;
-    }
+
 
 }

@@ -12,7 +12,7 @@ const Home = () => {
     anchor.setAttribute("class", "twitter-timeline");
     anchor.setAttribute("data-theme", "dark");
     anchor.setAttribute("data-tweet-limit", "5");
-    anchor.setAttribute("href", "https://twitter.com/KaineDev");
+    anchor.setAttribute("href", "https://twitter.com/King_O_Karma");
     document.getElementsByClassName("twitter-embed")[0].appendChild(anchor);
 
     const script = document.createElement("script");
@@ -21,11 +21,12 @@ const Home = () => {
   }, []);
 
   return (
+
     <div className="fadein">
       {
         TitleBox(
           "Portfolio",
-          "Typescript/Games Developer/Video Editor, Follower of all that is \"Nerd\"",
+          "Programmer / Games Developer / Video Editor",
           kaineTitle,
           "33.3% 100%",
           6
@@ -39,18 +40,13 @@ const Home = () => {
         textAlign: 'center',
         color: 'white',
       }}>
-        <p style={{
-          fontSize: "25px",
-          display: 'flex',
-          justifyContent: 'center',
-          textAlign: 'center',
-          color: 'white',
-        }}>Take a look around via the navigation bar!</p>
-        <br/>
+        <p className='topText'>I create YouTube videos focued on the games industry on my channel over on my channel "<a href='https://youtube.com/KingOfKarma'>Karma</a>", edit videos for "<a href='https://youtube.com/PyrocynicalVEVO'>PyroLIVE</a>"
+          and like to make little games here and there for fun</p>
+        <br />
       </span>
-        <section className="twitterContainer twitterBorder">
-          <div className="twitter-embed"></div>
-        </section>
+      <section className="twitterContainer twitterBorder">
+        <div className="twitter-embed"></div>
+      </section>
 
     </div>
   );

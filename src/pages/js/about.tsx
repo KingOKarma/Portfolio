@@ -42,10 +42,7 @@ const About = () => {
             <b><a className="link" href="https://www.linkedin.com/in/kaine-simpkins-753900220/" target="_blank" rel='noreferrer'>LinkedIn</a></b>
 
           </div>
-          <div>
-            <b><a className="link" href="https://www.fiverr.com/kingofkarma" target="_blank" rel='noreferrer'>Fiverr</a></b>
 
-          </div>
         </ul>
 
         <p></p>

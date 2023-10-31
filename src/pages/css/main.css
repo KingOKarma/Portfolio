@@ -10,7 +10,7 @@
 
 @media only screen and (min-width:576px) {
     .twitterBorder {
-        padding: 0 25%;
+        padding: 50px 25%;
     }
 }
 
@@ -19,6 +19,6 @@
 
 @media only screen and (max-width: 575px) {
     .twitterBorder {
-        padding: 0 5%;
+        padding: 25px 5%;
     }
 }

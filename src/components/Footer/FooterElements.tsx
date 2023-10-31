@@ -45,9 +45,6 @@ function FooterBar() {
                             <li className="footer-text footer-link" ><a href="https://www.linkedin.com/in/kaine-simpkins-753900220/"
                                 target="_blank" rel='noreferrer' >
                                 LinkedIn</a></li>
-                            <li className="footer-text footer-link" ><a href="https://www.fiverr.com/kingofkarma"
-                                target="_blank" rel='noreferrer' >
-                                Fiverr</a></li>
                         </ul>
                     </div>
                     {/* Column3 */}

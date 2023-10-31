@@ -76,7 +76,7 @@ const Games = () => {
             {
                 TitleBox(
                     "My Games",
-                    "Heres a wonderful list of all of the games that I have maked/helped with!",
+                    "Heres a wonderful list of all of the games that I have created!",
                     itchLogo,
                     "33.3% 100%",
                     5

@@ -12,13 +12,18 @@ function Navigation() {
     //crossorigin="anonymous"></script>
 
     useEffect(() => {
-        const script = document.createElement("script");
-        script.setAttribute("src", "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3441097416467374");
-        script.setAttribute("crossorigin", "anonymous");
-        document.head.appendChild(script);
-        return () => {
-          document.head.removeChild(script);
+        const addScript = async () => {
+            const script = document.createElement("script");
+            script.setAttribute("src", "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3441097416467374");
+            script.setAttribute("crossorigin", "anonymous");
+            document.head.appendChild(script);
+
+            return () => {
+                document.head.removeChild(script);
+            }
+
         }
+        addScript();
     }, []);
 
 
